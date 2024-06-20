@@ -1,0 +1,185 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Script hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "hello player",
+	Content = "this is a script hub for every game",
+	Image = "rbxassetid://4483345998",
+	Time = 7
+})
+
+local Tab = Window:MakeTab({
+	Name = "Random scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Random scripts"
+})
+
+Tab:AddButton({
+	Name = "infinite yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "keyboard script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Blox fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "blox fruit scripts" 
+})
+
+Tab:AddButton({
+	Name = "redz hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Nyula",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/nyulachan/nyula/main/nyuladhm"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "C tool use this with the Nyula",
+	Callback = function()
+      		getgenv().keytoclick = "C"
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = keytoclick
+tool.Activated:connect(function()
+    local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, keytoclick, false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+wait(0.2)
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "sus";
+Title = "sus";
+Duration = 5;
+});
+  	end    
+})
+
+Tab:AddButton({
+	Name = "auto farm chest",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/autofarmchest.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "mini gaming hub",
+	Callback = function()
+      		loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua")()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "bedwars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "roblox bedwars scripts"
+})
+
+Tab:AddButton({
+	Name = "vape v4",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Aispolite",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript",true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "strongest battle ground",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Strongest battle ground script"
+})
+
+Tab:AddButton({
+	Name = "Nyula",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/nyulachan/nyula/main/nyuladhm"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Q tool use this with Nyula",
+	Callback = function()
+      		getgenv().keytoclick = "Q"
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = keytoclick
+tool.Activated:connect(function()
+    local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, keytoclick, false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+wait(0.2)
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "sus";
+Title = "sus";
+Duration = 5;
+});
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "booga booga reborn",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "booga booga reborn script"
+})
+
+Tab:AddButton({
+	Name = "nils hub",
+	Callback = function()
+      		    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5150b8fb86bb20e793ccbe4f6a2201c.lua"))()
+  	end    
+})
+
+
+
+
+
+
+
+
+OrionLib:Init()
